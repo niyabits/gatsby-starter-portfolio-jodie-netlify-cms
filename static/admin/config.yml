@@ -1,3 +1,45 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+
+site_url: https://kartikshots.netlify.com
+
+media_folder: content/projects
+public_folder: content/projects
+
+collections:
+  - name: 'color' # Used in routes, e.g., /admin/collections/blog
+    label: 'Color' # Used in the UI
+    folder: 'content/projects/color' # The path to the folder where the documents are stored
+    media_folder: ''
+    public_folder: ''
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+
+  - name: 'extreme-neon' # Used in routes, e.g., /admin/collections/blog
+    label: 'Extreme Neon' # Used in the UI
+    folder: 'content/projects/neon' # The path to the folder where the documents are stored
+    media_folder: ''
+    public_folder: ''
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+
+  - name: 'black-and-white' # Used in routes, e.g., /admin/collections/blog
+    label: 'Black and White' # Used in the UI
+    folder: 'content/projects/bw' # The path to the folder where the documents are stored
+    media_folder: ''
+    public_folder: ''
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+
+  - name: 'breakfast' # Used in routes, e.g., /admin/collections/blog
+    label: 'Breakfast' # Used in the UI
+    folder: 'content/projects/breakfast' # The path to the folder where the documents are stored
+    media_folder: ''
+    public_folder: ''
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
