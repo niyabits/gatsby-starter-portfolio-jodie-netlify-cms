@@ -1,3 +1,0 @@
----
-thumbnail: pp.png
----
